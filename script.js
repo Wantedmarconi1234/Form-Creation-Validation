@@ -16,15 +16,15 @@ document.addEventListener("DOMContentLoaded", () =>{
         let messages = [];
         if (username.length < 3) {
             isValid = false;
-            messages = [...messages,"Username is short"]
+            messages.push("Username is short")
         }
         if (!emailPattern.test(email)) {
             isValid = false;
-            messages = [...messages,"Email is invalid"]
+            messages.push("Email is invalid")
         }
         if (password.length < 8) {
             isValid = false;
-            messages = [...messages,"Password is short"]
+            messages.push("Password is short")
         }
         if (isValid) {
             feedbackDiv.textContent = "Registration successful";
