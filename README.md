@@ -38,3 +38,45 @@ This project focuses on frontend validation for demonstration purposes. Backend 
 Credits
 Created by [Fredrick Akuffo]
 
+<!-- Fetch data project -->
+
+# Fetch and Display User Data
+
+This project demonstrates how to retrieve data asynchronously from an API and display it in an unordered list on a web page. It uses JavaScript's `fetch` API to get user data from `jsonplaceholder.typicode.com`.
+
+## Project Structure
+
+- `fetch-data.html`: The main HTML file containing the structure of the webpage.
+- `fetch-data.css`: The CSS file for styling the webpage.
+- `fetch-data.js`: The JavaScript file containing the code to fetch and display user data.
+
+## How It Works
+
+The JavaScript code in `fetch-data.js` does the following:
+
+1. Waits for the DOM to be fully loaded using `DOMContentLoaded`.
+2. Defines an asynchronous function `fetchUserData` to fetch user data from the API.
+3. Fetches user data from the `https://jsonplaceholder.typicode.com/users` endpoint.
+4. Parses the response as JSON.
+5. Clears any existing content in the `div` with the id `api-data`.
+6. Creates a new `ul` element.
+7. Iterates over the fetched user data, creating an `li` element for each user, and appends it to the `ul` element.
+8. Appends the `ul` element to the `div` with the id `api-data`.
+9. Handles any errors that occur during the fetch operation by displaying an error message.
+
+## Files
+
+### `fetch-data.html`
+### `fetch-data.css`
+### `fetch-data.js  `
+
+## Usage
+1. Clone or download the repository.
+2. Open fetch-data.html in a web browser.
+3 The page will automatically fetch and display the user data from the API.
+Dependencies
+4. No external dependencies are required for this project. It uses vanilla JavaScript.
+
+## License
+1. This project is open source and available under the MIT License.
+
